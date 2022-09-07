@@ -623,4 +623,328 @@ footer a:hover{
         margin: 0;
         padding: 0;
     }
+    /* single Product */
+    #prodetails {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    #prodetails .single-pro-image{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #prodetails .singlr-pro-details{
+        width: 100%;
+    }
+    /* blog */
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+    #blog .blog-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog .blog-img{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+    #blog .blog-details{
+        width: 100%;
+    }
+    /* About us page */
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #about-head div{
+        padding-left: 0px;
+    }
 }
+
+/* Start Shop Page..................................................... */
+#page-header{
+    background-image: url(Images/shop1.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px;
+}
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+#pagination {
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* Single Product Start................................ */
+#prodetails{
+    display: flex;
+    margin-top: 20px;
+}
+#prodetails .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#prodetails .singlr-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+#prodetails .singlr-pro-details h4{
+    padding: 40px 0 20px 0;
+}
+#prodetails .singlr-pro-details h2{
+    font-size: 26px;
+}
+#prodetails .singlr-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#prodetails .singlr-pro-details input{
+    width: 50%;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+#prodetails .singlr-pro-details input:focus{
+    outline: none;
+}
+#prodetails .singlr-pro-details button{
+    background: #088178;
+    color: #fff;
+}
+#prodetails .singlr-pro-details span{
+    line-height: 25px;
+    text-align: justify;
+}
+/* Blog page start........................................ */
+#page-header.blog-header{
+    background-image: url(Images/Blog.jpg);
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px;
+}
+#blog .blog-img{
+   width: 50%;
+   margin-right: 40px; 
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover       ;
+}
+#blog .blog-details{
+    width: 50%;
+ }
+ #blog .blog-details a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+ }
+ #blog .blog-details a::after{
+    content: "";
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 4px;
+    right: -60px;
+ }
+ #blog .blog-details a:hover{
+    color: #088178;
+    transition: 0.3s;
+ }
+ #blog .blog-details a:hover::after{
+    background-color: #088178;
+ }
+ #blog .blog-box h1{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -9;
+ }
+ /* About us page strat................................. */
+#page-header.about-header{
+    background-image: url(Images/about.jpg);
+ }
+ #about-head{
+    display: flex;
+    align-items: center;
+ }
+ #about-head img{
+    width: 50%;
+    height: auto;
+ }
+ #about-head div{
+    padding-left: 40px;
+ }
+ /* Contact us page start................................. */
+ #page-header.contact-header{
+    background-image: url(Images/contact.png);
+ }
+ #contact-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ #contact-details .details{
+    width: 40%;
+ }
+ #contact-details .details span{
+    font-size: 12px;
+ }
+ #contact-details .details h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+ }
+ #contact-details .details h3{
+    font-size: 16px;
+    padding-bottom: 15px;
+ }
+ #contact-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+ }
+ #contact-details .details li i{
+    font-size: 14px;
+    padding-right: 22px;
+ }
+ #contact-details .details p{
+    margin: 0;
+    font-size: 14px;
+ }
+ #contact-details .map{
+    width: 55%;
+    height: 400px;
+ }
+ #contact-details .map iframe{
+    width: 100%;
+    height: 100%;
+ }
+ /* Form Start ..................................*/
+
+ #form-details form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #e1e1e1;
+    padding: 40px;
+ }
+ #form-details form span{
+    font-size: 12px;
+ } 
+ #form-details form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+ }
+ #form-details form input,
+ #form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid #e1e1e1;
+ }      
+ #form-details form button{
+    background-color:  #088178;
+    color: #fff;
+ }
+ /* cart start...................................... */
+ #page-header.cart-header{
+    background-image: url(Images/cart.webp);
+ }
+ #cart3 table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+ }
+ #cart3 table img{
+    width: 70px;
+ }
+ #cart3 table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+ }
+ #cart3 table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+ }
+ #cart3 table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+ }
+ #cart3 table td:nth-child(4),
+ #cart3 table td:nth-child(5),
+ #cart3 table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+ }
+ #cart3 table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+ }
+ #cart3 table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+ }
+ #cart3 table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+ }
+ #cart3 table tbody tr td {
+    padding-top: 15px;
+ }
+ #cart3 table tbody td{
+    font-size: 13px;
+ }
